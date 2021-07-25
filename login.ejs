@@ -110,21 +110,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav">
                     <li class="nav-item ">
-                        <a class="nav-link" id="a4" href="home">Home <span class="sr-only"> </span></a>
+                        <a class="nav-link" id="a4" href="">Home <span class="sr-only"> </span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="a6" href="apply">Apply</a>
+                        <a class="nav-link" id="a6" href="">Apply</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" id="a6" href="status">Status</a>
+                        <a class="nav-link" id="a6" href="">Status</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="a6" href="contactus">Contact Us</a>
+                        <a class="nav-link" id="a6" href="">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+    <% if(typeof error !=='undefined' ){ %>
+        <div class="alert alert-danger alert-dismissible fade show position-absolute w-100" role="alert"
+            style="border: 1px solid rgb(235, 79, 79); z-index:88; ">
+            <strong>Wrong Credentials!</strong>Please check your credentials and try again.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% } %>
     <center>
         <h1 style="font-family:Lucida Console, Courier New, monospace">WELCOME</h1>
     </center>

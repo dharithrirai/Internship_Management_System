@@ -19,7 +19,7 @@ app.get("/home", function (req, res) {
   res.sendFile(path.join(__dirname + "/home.html"));
 });
 app.get("/login", function (req, res) {
-  res.sendFile(path.join(__dirname + "/login.html"));
+  res.render("login");
 });
 app.get("/login1", function (req, res) {
   res.sendFile(path.join(__dirname + "/login1.html"));
@@ -60,9 +60,10 @@ app.post("/save", (req, res) => {
     }
   );
   connection.end();
-  res.sendFile(path.join(__dirname + "/login.html"));
+  res.render("login");
 });
 //registration end
+
 
 // login page begin
 // login authentication start
@@ -89,13 +90,13 @@ app.post("/login", (req, res) => {
       } else {
         if (result.length == 0) {
           console.log("email not available");
-          res.sendFile(path.join(__dirname + "/login.html"));
+          res.render( "login");
         } else if (result[0].password == fpassword) {
           console.log("login success");
           res.sendFile(path.join(__dirname + "/home.html"));
         } else {
           console.log("invaild user and password");
-          res.sendFile(path.join(__dirname + "/login.html"));
+          res.render("login",{error:"Password not match"});
         }
       }
     }
