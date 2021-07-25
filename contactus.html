@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<style>
+    #a0 {
+        background-color: #1e3333;
+        ;
+        padding-left: 10px;
+    }
+    #a1 {
+        background-color: #A6E2E2;
+        height: 50px;
+    }
+    #a2 {
+        padding-top: 10px;
+        background-color: white;
+    }
+     #a3 {
+        font-size: 15px;
+    }
+    #a4 {
+
+        color: #A6E2E2;
+    }
+    #a5 {
+        padding-bottom: 20px;
+    }
+    #a6 {
+        color: white;
+    }
+    #a7 {
+        background-color:#A6E2E2;
+        height: px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    #a8 {
+        position: absolute;
+        left: 100px;
+        top: 70px;
+        width: 600px;
+        padding: 10px;
+    }
+    #a10 {
+        height: 500px;
+        background-color: white
+    }
+    #a11 {
+        height: 50px;
+        background-color: white;
+    }
+    #a13 {
+        background-color: #A6E2E2;
+        height: 200px;
+        text-align: center;
+        font-family: 'Nyala';
+        font-size: 30px;
+        bottom: 0px;
+        padding-top: 20px;
+        position: absolute;
+    }
+    #a14 {
+        background-color: #1e3333;
+        height: 50px;
+        bottom: 0px;
+        position: absolute;
+        width: 1540px;
+        color: white
+    }
+     #a15 {
+        padding-top: 10px;
+        background-color: #A6E2E2;
+    }
+    .button:hover {
+        background-color: gray;
+    }
+    .button:active {
+        background-color: white;
+        box-shadow: 0 3px rgb(138, 137, 137);
+        transform: translateY(4px);
+    }
+    .button {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 15px;
+        font-weight: bolder;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #0ec5c5;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 3px #999;
+    }
+    .nav-link:hover{
+        background-color:rgb(90, 94, 95);
+        }
+</style>
+<body>
+        <nav class="navbar navbar-expand-lg " id="a0">
+            <a class="navbar-brand" id="a4">Internship Management</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" id="a6" href="home">Home <span class="sr-only"> </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="a6" href="apply">Apply</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" id="a6" href="status">Status</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" id="a4" href="contactus">Contact Us</a>
+                        </li>
+                    <li>
+                        <h6 style="right:65px;padding-top:7px; float:right; position:absolute;color:white">LOGOUT</h6>
+                        <a href="login" style="right:20px; float:right; position:absolute">
+                            <img src="./image/logout1.png" width="35" height="35" class="rounded-circle">
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+        </nav>
+        <img src="./image/Connecting teams.png" class="card-img-top" alt="..." style="float:right;position:relative;
+                  right:200px; width:580px;height:580px;">
+                <div class="container" id="a8">
+                    <div class="card" style="width:33rem;height:33rem;">
+                        <div class="card-body" style="background-color:#1e3333;">
+                            <h4 style="text-align: center; padding-top:20px;font-weight: bolder;color:white">BUILDING BLOCK FOR SUCCESSFULL CAREER
+                            </h4>
+                            <h5 class="card-title " style="text-align:center;color: #A6E2E2">Contact Us</h5>
+                            <h6 class="card-title " style="text-align:center;color:white; font-weight: normal;">Email-id: dharithrirai18@gmail.com</h6>
+                            <h6 class="card-title " style="text-align:center;color:white;font-weight: normal;">Contact Number:&nbsp9620016132</h6>
+                            </br>
+                                <form method="POST" action="feed" id="a7">
+                                <label for="" class="form-label">Name</label>
+                                <input type="name" name="name" class="form-control"/>
+                                <label for="" class="form-label">Email-Id</label>
+                                <input type="name" name="email" class="form-control"/>
+                            <br>
+                                <textarea id="subject" name="feedback" placeholder="Any feedback" style="height:48px; width:455px"></textarea>
+                                <br>
+                                <center>
+                                    <button type="input" class="button" id="bt">Submit</button>
+                                </center>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+        <div class="footer-copyright text-center py-3" id="a14">© 2021 Copyright:
+            <a href=""style="color:aqua"> company.com</a>
+        </div>
+</body>
+</html>

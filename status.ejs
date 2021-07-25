@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #a0 {
+        background-color: #1e3333;
+        padding-left: 10px;
+    }
+
+    #a1 {
+        background-color: #A6E2E2;
+        height: 50px;
+    }
+
+    #a2 {
+        padding-top: 10px;
+        background-color: white;
+    }
+
+    #a3 {
+        font-size: 15px;
+    }
+
+    #a4 {
+        color: #A6E2E2;
+    }
+
+    #a5 {
+        padding-bottom: 20px;
+    }
+
+    #a6 {
+        color: white;
+    }
+
+    #a7 {
+        background-color: #8FB3B8;
+        height: 420px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+    }
+
+    #a8 {
+        padding-bottom: 25px;
+    }
+
+    #a10 {
+        height: 500px;
+        background-color: white
+    }
+
+    #a11 {
+        height: 50px;
+        background-color: white;
+    }
+
+    #a13 {
+        background-color: #A6E2E2;
+        height: 220px;
+        text-align: center;
+        font-family: 'Nyala';
+        font-size: 30px;
+    }
+
+    #a14 {
+        background-color: #1e3333;
+        height: 50px;
+        color: white;
+    }
+
+    .form {
+        float: left;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #1e3333;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 3px #999;
+    }
+
+    .nav-link:hover {
+        background-color: rgb(90, 94, 95);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Status</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable();
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body style="background-color:white">
+    <div class="fixed-container" id="a5">
+        <nav class="navbar navbar-expand-lg " id="a0">
+            <a class="navbar-brand" id="a4">Internship Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="a6" href="home">Home <span class="sr-only"> </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="a6" href="apply">Apply</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="a4" href="status">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="a6" href="contactus">Contact Us</a>
+                    </li>
+                    <li>
+                        <h6 style="right:65px;padding-top:7px; float:right; position:absolute;color:white">LOGOUT</h6>
+                        <a href="login" style="right:20px; float:right; position:absolute">
+                            <img src="./image/logout1.png" width="35" height="35" class="rounded-circle">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container -fluid d-flex justify-content-center mt-5">
+        <h1 style="font-family:Lucida Console, Courier New, monospace">NEW OPPORTUNITY IS AWAITING YOU!!!</h1>
+    </div>
+    <hr>
+    <center>
+        <h3 style="font-family:Lucida Console, Courier New, monospace">Candidate list</h3>
+    </center>
+    <div class="container-fluid mt-5 " style="background-color:#8ecfcf">
+        <div class="container mt-5" style="background-color:#8ecfcf; height:100vh">
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        <th>#id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone No</th>
+                        <th>Intern Id</th>
+                        <th>Designation</th>
+                        <th>Mentor</th>
+                        <th>Your Status</th>
+                        <th>Accept/Reject offer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if(bdata.length!=0){ var i=1; bdata.forEach(function(data){ %>
+                        <tr>
+                            <td>
+                                <%=i; %>
+                            </td>
+                            <td>
+                                <%=data.name %>
+                            </td>
+                            <td>
+                                <%=data.email %>
+                            </td>
+                            <td>
+                                <%=data.phone %>
+                            </td>
+                            <td>
+                                <%=data.jobid %>
+                            </td>
+                            <td>
+                                <%=data.desig %>
+                            </td>
+                            <td>
+                                <%=data.mentor %>
+                            </td>
+                            <td>
+                                <% if(data.selected){%> Accepted<%}else{%>Rejected<%}%>%>
+                            </td>
+                            <td>
+                                <center>
+                                    <a href="/users/edit/<%=data.id%>/<%=data.selected%>"
+                                        class="button">Accept/Reject</a>
+                                </center>
+                                <!-- <a href="/users/delete/<%=data.id%>"
+                onclick="return confirm('Are you sure you want to delete this item?')"class="button">Delete</a> -->
+                            </td>
+                        </tr>
+                        <% i++; }) %>
+                            <% } else{ %>
+                                <tr>
+                                    <td colspan="7">No Data Found</td>
+                                </tr>
+                                <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<div class="footer-copyright text-center py-3" id="a14">© 2021 Copyright:
+    <a href="" style="color:aqua"> company.com</a>
+</div>
+
+</html>

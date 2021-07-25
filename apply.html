@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+<style>
+     #a0 {
+        background-color:#1e3333;;
+        padding-left: 10px;
+    }
+    #a1 {
+        background-color: #A6E2E2;
+        height: 50px;
+    }
+    #a2 {
+        padding-top: 10px;
+        background-color:white;
+    }
+    #a3 {
+        font-size: 15px;
+    }
+    #a4 {
+        color:#A6E2E2;
+    }
+    #a5 {
+        padding-bottom: 20px;
+    }
+    #a6 {
+        color:white;
+    }
+    #a7 {
+        background-color: #8FB3B8;
+        height: 420px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+    }
+    #a8 {
+        padding-bottom: 25px;
+    }
+    #a10 {
+        height: 500px;
+        background-color: white
+    }
+    #a11 {
+        height: 50px;
+        background-color: white;
+
+    }
+    #a13 {
+        background-color: #A6E2E2;
+        height: 220px;
+        text-align: center;
+        font-family: 'Nyala';
+        font-size: 30px;
+    }
+    #a14 {
+        background-color:#1e3333;;
+        height: 50px;
+        color:white;
+    }
+    .form {
+        float: left;
+    }
+    .button:hover {
+        background-color:gray;
+    }
+
+    .button:active {
+        background-color:cadetblue;
+        box-shadow: 0 3px #666;
+        transform: translateY(4px);
+    }
+    .button {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bolder;
+        text-decoration: none;
+        outline: none;
+        color:#0ec5c5;
+        background-color:white;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 2px 3px #999;
+    }
+    .nav-link:hover{
+        background-color:rgb(90, 94, 95);
+    }
+</style>
+<body>
+    <div class="fixed-container" id="a5">
+        <nav class="navbar navbar-expand-lg " id="a0">
+            <a class="navbar-brand" id="a4">Internship Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="a6" href="home">Home <span class="sr-only"> </span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="a4" href="apply">Apply</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="a6" href="status">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="a6" href="contactus">Contact Us</a>
+                    </li>
+                    <li>
+                        <h6 style="right:65px;padding-top:7px; float:right; position:absolute;color:white">LOGOUT</h6>
+                        <a href="login" style="right:20px; float:right; position:absolute">
+                            <img src="./image/logout1.png" width="35" height="35" class="rounded-circle">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <center>
+        <h1 style="font-family:Lucida Console, Courier New, monospace">GRAB YOUR POSITION!!!</h1>
+        <h4 style="font-family:Lucida Console, Courier New, monospace;padding-top:25px;padding-bottom:25px;">VACANCIES IN TECHNICAL FIELD</h4>
+    </center>
+    <div class="card-group">
+        <div class="card">
+            <img src="./image/web development (2).png" class="card-img-top" alt="..." style="height:250px;border-radius: 50%;border: 3px solid gray;width:250px;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ">
+            <div class="card-body "style ="background-color:#A6E2E2;height:180px" >
+                <h5 class="card-title"style ="text-align:center">Web Developement</h5>
+                <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                    <div>
+                        <h5 style="text-align:center; font-size:smaller;">Duration:6 months</h5>
+                    </div>
+            </div>
+            <div class="card-footer">
+                <center><a href="apply1">
+                        <button class="button">Apply Now</button>
+                    </a></center>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/Cloud hosting-amico.png" class="card-img-top" alt="..."style="height:250px;border-radius: 50%;border: 3px solid gray;width:250px;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ">
+            <div class="card-body">
+                <h5 class="card-title" style ="text-align:center">Data Science</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <div>
+                    <h5 style="text-align:center; font-size:smaller;">Duration:6 months</h5>
+                </div>
+            </div>
+            <div class="card-footer">
+               <center><a href="apply1">
+                <button class="button">Apply Now</button>
+            </a></center>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/graphic.PNG" class="card-img-top" alt="..."style="height:250px;border-radius: 50%;border: 3px solid gray;width:250px;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ">
+            <div class="card-body"style ="background-color:#A6E2E2;height:180px">
+                <h5 class="card-title"style ="text-align:center">Graphic Design</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                    <div >
+                        <h5 style ="text-align:center; font-size:smaller;">Duration:6 months</h5>
+                    </div>
+            </div>
+            <div class="card-footer">
+                <center><a href="apply1">
+                        <button class="button">Apply Now</button>
+                    </a></center>
+            </div>
+        </div>
+    </div>
+<center>
+    <h4 style="font-family:Lucida Console, Courier New, monospace; padding-top:25px;padding-bottom:25px;">VACANCIES IN NON TECHNICAL FIELD</h4>
+</center>
+<div class="card-group">
+    <div class="card">
+        <img src="./image/Buisiness Management.png" class="card-img-top" alt="..."style="height:250px;border-radius: 50%;border: 3px solid gray;width:250px;display: block;
+  margin-left: auto; margin-right: auto; padding:10px;">
+        <div class="card-body " style="background-color:#A6E2E2;height:180px; padding:10px;">
+            <h5 class="card-title" style="text-align:center">Business Management</h5>
+            <p class="card-text">Business management focuses on the organising, planning and analysing of business activities that are required to
+            efficiently manage and run a business.</p>
+            <div>
+                <h5 style="text-align:center; font-size:smaller;">Duration:3 months</h5>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center><a href="apply1">
+                    <button class="button">Apply Now</button>
+                </a></center>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./image/Marketting.png" class="card-img-top" style="height:250px;border-radius: 50%;border: 3px solid gray;width:250px;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align:center">Digital Marketing</h5>
+            <p class="card-text">Advertising delivered through digital channels such as search engines, websites, social media, email, and mobile apps.It includes handling of social media for marketing purposes.</p>
+            <div>
+                <h5 style="text-align:center; font-size:smaller;">Duration:3 months</h5>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center><a href="apply1">
+                    <button class="button">Apply Now</button>
+                </a></center>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./image/content.PNG" class="card-img-top" alt="..."style="height:250px;border-radius: 50%;border: 3px solid gray;width:250px;display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ">
+        <div class="card-body"style ="background-color:#A6E2E2;height:180px">
+            <h5 class="card-title" style="text-align:center">Content Writing</h5>
+            <p class="card-text">Planning, writing and editing web content, typically for digital marketing purposes. It can include writing blog posts
+            and articles, scripts for videos and podcasts.</p>
+            <div>
+                <h5 style="text-align:center; font-size:smaller;">Duration:3 months</h5>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center><a href="apply1">
+                    <button class="button">Apply Now</button>
+                </a></center>
+        </div>
+    </div>
+</div>
+</body>
+<div class="footer-copyright text-center py-3" id="a14">© 2021 Copyright:
+    <a href=""style="color:aqua"> company.com</a>
+</div>
+</html>
+
